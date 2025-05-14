@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AROMA CAFE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #c89f6a;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background-image: url('coffee-header.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 550px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      padding-left: 60px;
+    }
+
+    .hero-text h1 {
+      color: #f3d1b2;
+      font-size: 44px;
+      max-width: 600px;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 16px 28px;
+      border-radius: 12px;
+    }
+
+    .popular {
+      background: linear-gradient(#a96e3f, #cfa478);
+      padding: 60px 40px;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .popular h2 {
+      color: white;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .items {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .item img {
+      width: 220px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .item p {
+      margin-top: 14px;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #c89f6a;
+      color: white;
+      text-align: center;
+      padding: 24px 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .items {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero {
+        height: 400px;
+        padding-left: 30px;
+      }
+
+      .hero-text h1 {
+        font-size: 28px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">AROMA CAFE</div>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="menu.html">Меню</a>
+      <a href="about.html">Про нас</a>
+      <a href="contacts.html">Контакти</a>
+      <a href="blog.html">Блог</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Відчуй аромат справжньої кави</h1>
+    </div>
+  </section>
+
+  <section class="popular">
+    <h2>Популярні позиції</h2>
+    <div class="items">
+      <div class="item">
+        <img src="latte.jpg" alt="Латте">
+        <p>Латте</p>
+      </div>
+      <div class="item">
+        <img src="mocha.jpg" alt="Мокачино">
+        <p>Мокачино</p>
+      </div>
+      <div class="item">
+        <img src="cheesecake.jpg" alt="Чізкейк">
+        <p>Чізкейк</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AROMA CAFE — Всі права захищено</p>
+  </footer>
+
+</body>
+</html>

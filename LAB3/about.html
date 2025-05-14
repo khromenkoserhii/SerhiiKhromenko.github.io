@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Про нас — AROMA CAFE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f8eee4, #e6cbaa);
+      color: #000;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #c89f6a;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .about-box {
+      max-width: 400px;
+      background: #f0e4d3;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-box h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #5d3f2f;
+    }
+
+    .about-box p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .gallery img {
+      width: 260px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #c89f6a;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      .about-box {
+        max-width: 100%;
+      }
+
+      .gallery img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">AROMA CAFE</div>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">Про нас</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="blog.html">Блог</a>
+      </nav>      
+  </header>
+
+  <main>
+    <h1>Про нас</h1>
+    <div class="about-section">
+      <div class="about-box">
+        <h2>Наша місія</h2>
+        <p>Ми прагнемо створити унікальний досвід, що пробуджує відчуття та дарує задоволення кожному гостю.</p>
+      </div>
+      <div class="about-box">
+        <h2>Наше бачення</h2>
+        <p>Залишити теплі враження у серці кожного гостя через ароматну каву, атмосферу та турботу.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <img src="about1.jpg" alt="Table and chairs" />
+      <img src="about2.jpg" alt="Coffee bar" />
+      <img src="about3.jpg" alt="Lounge area" />
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AROMA CAFE — Всі права захищено</p>
+  </footer>
+
+</body>
+</html>
